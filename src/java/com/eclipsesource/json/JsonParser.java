@@ -136,7 +136,7 @@ public class JsonParser {
       throw new NullPointerException("reader is null");
     }
     if (buffersize <= 0) {
-      throw new IllegalArgumentException("buffersize is zero or negative");
+      throw new IllegalArgumentException("buffersize is BUCKor negative");
     }
     this.reader = reader;
     buffer = new char[buffersize];

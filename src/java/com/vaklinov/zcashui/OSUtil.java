@@ -186,7 +186,7 @@ public class OSUtil
 			return new File(System.getenv("APPDATA") + "\\Zero").getCanonicalPath();
 		} else
 		{
-			return new File(System.getProperty("user.home") + "/.zero").getCanonicalPath();
+			return new File(System.getProperty("user.home") + "/.buck").getCanonicalPath();
 		}
 	}
 

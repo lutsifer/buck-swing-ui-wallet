@@ -122,7 +122,7 @@ public class DashboardPanel
 		//	this.getClass().getClassLoader().getResource("images/zcash-logo-square3.png")));
 		//tempPanel.add(logoLabel);
 		//tempPanel.add(new JLabel(" "));
-		JLabel zcLabel = new JLabel("\u01B5ERO Wallet        ");
+		JLabel zcLabel = new JLabel("BUCK Wallet        ");
 		zcLabel.setFont(new Font("Helvetica", Font.BOLD | Font.ITALIC, 32));
 		tempPanel.add(zcLabel);
 		//tempPanel.setToolTipText("Powered by ZCash\u00AE");
@@ -362,7 +362,7 @@ public class DashboardPanel
 		}
 
 		// TODO: what if ZCash directory is non-default...
-		File walletDAT = new File(OSUtil.getBlockchainDirectory() + "/wallet.zero");
+		File walletDAT = new File(OSUtil.getBlockchainDirectory() + "/wallet.dat");
 		
 		if (this.OSInfo == null)
 		{
@@ -515,11 +515,11 @@ public class DashboardPanel
 		String text =
 			"<html>" + 
 		    "<span style=\"font-family:monospace;font-size:8.9px;" + color1 + "\">Transparent balance: <span style=\"font-size:9px\">" + 
-				transparentUCBalance + " ZER </span></span><br/> " +
+				transparentUCBalance + " BUCK </span></span><br/> " +
 			"<span style=\"font-family:monospace;font-size:8.9px;" + color2 + "\">Private (Z) balance: <span style=\"font-weight:bold;font-size:9px\">" + 
-		    	privateUCBalance + " ZER </span></span><br/> " +
+		    	privateUCBalance + " BUCK </span></span><br/> " +
 			"<span style=\"font-family:monospace;font-size:8.9px;" + color3 + "\">Total (Z+T) balance: <span style=\"font-weight:bold;font-size:11.5px;\">" + 
-		    	totalUCBalance + " ZER </span></span>" +
+		    	totalUCBalance + " BUCK </span></span>" +
 			"<br/>  </html>";
 		
 		this.walletBalanceLabel.setText(text);
@@ -533,9 +533,9 @@ public class DashboardPanel
 					  "Unconfirmed (unspendable) balance is being shown due to an<br/>" + 
 		              "ongoing transaction! Actual confirmed (spendable) balance is:<br/>" +
 		              "<span style=\"font-size:5px\"><br/></span>" +
-					  "Transparent: " + transparentBalance + " ZER<br/>" +
-		              "Private ( Z ): <span style=\"font-weight:bold\">" + privateBalance + " ZER</span><br/>" +
-					  "Total ( Z+T ): <span style=\"font-weight:bold\">" + totalBalance + " ZER</span>" +
+					  "Transparent: " + transparentBalance + " BUCK<br/>" +
+		              "Private ( Z ): <span style=\"font-weight:bold\">" + privateBalance + " BUCK</span><br/>" +
+					  "Total ( Z+T ): <span style=\"font-weight:bold\">" + totalBalance + " BUCK</span>" +
 					  "</html>";
 		}
 		

@@ -98,7 +98,7 @@ public class ZCashUI
     public ZCashUI(StartupProgressDialog progressDialog)
         throws IOException, InterruptedException, WalletCallException
     {
-        super("\u01B5ERO Swing Wallet UI 0.68 (beta)");
+        super("BUCK Swing Wallet UI 0.68 (beta)");
         
         if (progressDialog != null)
         {
@@ -313,7 +313,7 @@ public class ZCashUI
 
                 JOptionPane.showMessageDialog(
                     ZCashUI.this.getRootPane().getParent(),
-                    "The ZERO GUI Wallet is currently considered experimental. Use of this software\n" +
+                    "The BUCKGUI Wallet is currently considered experimental. Use of this software\n" +
                     "comes at your own risk! Be sure to read the list of known issues and limitations\n" +
                     "at this page: https://github.com/vaklinov/zero-swing-wallet-ui\n\n" +
                     "THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\n" +
@@ -367,7 +367,7 @@ public class ZCashUI
         {
         	OS_TYPE os = OSUtil.getOSType();
         	
-            System.out.println("Starting ZERO Swing Wallet ...");
+            System.out.println("Starting BUCKSwing Wallet ...");
             System.out.println("OS: " + System.getProperty("os.name") + " = " + os);
             System.out.println("Current directory: " + new File(".").getCanonicalPath());
             System.out.println("Class path: " + System.getProperty("java.class.path"));
@@ -472,8 +472,8 @@ public class ZCashUI
             {
                 JOptionPane.showMessageDialog(
                     null,
-                    "There was a problem communicating with the Zero daemon/wallet. \n" +
-                    "Please ensure that the Zero server zcashd is started (e.g. via \n" + 
+                    "There was a problem communicating with the BUCKdaemon/wallet. \n" +
+                    "Please ensure that the BUCKserver zcashd is started (e.g. via \n" +
                     "command  \"zcashd --daemon\"). Error message is: \n" +
                      wce.getMessage() +
                     "See the console output for more detailed error information!",

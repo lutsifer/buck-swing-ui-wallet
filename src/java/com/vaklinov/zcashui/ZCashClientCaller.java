@@ -127,7 +127,7 @@ public class ZCashClientCaller
 		if (zcashd == null || (!zcashd.exists()))
 		{
 		    throw new IOException(
-		    	"The Zero command line utility " + zcashcli.getCanonicalPath() + 
+		    	"The BUCKcommand line utility " + zcashcli.getCanonicalPath() +
 		    	" was found, but zcashd was not found!");
 		}
 	}
@@ -382,7 +382,7 @@ public class ZCashClientCaller
                 for (int j = 0; j < MemoHex.length(); j += 2)
                 {
                     String str = MemoHex.substring(j, j + 2);
-                    if (!str.equals("00")) // Zero bytes are empty
+                    if (!str.equals("00")) // BUCKbytes are empty
                     {
                     	MemoAscii.append((char) Integer.parseInt(str, 16));
                     }

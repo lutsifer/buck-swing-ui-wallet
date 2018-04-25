@@ -124,7 +124,7 @@ public class TransactionTable
 						
 						System.out.println("Transaction ID for block explorer is: " + txID);
 						Desktop.getDesktop().browse(
-							new URL("https://zeroexplorer.com/?tx=" + txID).toURI());
+							new URL("https://explorer.buck.red/tx/" + txID).toURI());
 					} catch (Exception ex)
 					{
 						ex.printStackTrace();
@@ -232,7 +232,7 @@ public class TransactionTable
 			JLabel infoLabel = new JLabel(
 					"<html><span style=\"font-size:9px;\">" +
 					"The table shows the information about the transaction with technical details as " +
-					"they appear at Zero network level." +
+					"they appear at BUCKnetwork level." +
 				    "</span>");
 			infoLabel.setBorder(BorderFactory.createEtchedBorder(EtchedBorder.LOWERED));
 			tempPanel.add(infoLabel, BorderLayout.CENTER);

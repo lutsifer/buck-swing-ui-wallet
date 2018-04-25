@@ -1,8 +1,8 @@
-# [ZERO](https://bitcointalk.org/index.php?topic=1796036.0) Desktop GUI Wallet
+# [BUCK](https://bitcointalk.org/index.php?topic=1796036.0) Desktop GUI Wallet
 
 ## Graphical user interface wrapper for the [ZERO](https://bitcointalk.org/index.php?topic=1796036.0) command line tools
 
-This program provides a Graphical User Interface (GUI) for the ZERO client tools that acts as a wrapper and 
+This program provides a Graphical User Interface (GUI) for the BUCKclient tools that acts as a wrapper and
 presents the information in a user-friendly manner.
 
 ![Screenshot](https://github.com/vaklinov/zero-swing-wallet-ui/raw/master/docs/ZeroWallet.png "Main Window")
@@ -10,7 +10,7 @@ presents the information in a user-friendly manner.
 
 ## Building, installing and running the Wallet GUI
 
-Before installing the Desktop GUI Wallet you need to have ZERO up and running. The following [guide](https://github.com/zerocurrency/zero) explains how to set up [ZERO](https://bitcointalk.org/index.php?topic=1796036.0). 
+Before installing the Desktop GUI Wallet you need to have BUCKup and running. The following [guide](https://github.com/zerocurrency/zero) explains how to set up [ZERO](https://bitcointalk.org/index.php?topic=1796036.0).
 
 **For security reasons it is recommended to always build the GUI wallet program from GitHub**
 **[source](https://github.com/vaklinov/zero-swing-wallet-ui/archive/master.zip).**
@@ -56,30 +56,30 @@ The details of how to build it are described below (easy to follow).
    At this point the build process is finished the built GUI wallet program is the JAR 
    file `./build/jars/ZEROSwingWalletUI.jar`
 
-3. Installing the built Zero GUI wallet
+3. Installing the built BUCKGUI wallet
 
-  3.1. If you have built Zero from source code:
+  3.1. If you have built BUCKfrom source code:
 
    Assuming you have already built it from source code in directory `/home/user/zero/src` (for 
-   example - this is the typical build dir. for Zero v1.0.6) which contains the command line tools `zcash-cli` 
+   example - this is the typical build dir. for BUCKv1.0.6) which contains the command line tools `zcash-cli`
    and `zcashd` you need to take the created file `./build/jars/ZEROSwingWalletUI.jar` and copy it 
    to directory `/home/user/zero/src` (the same dir. that contains `zcash-cli` and `zcashd`). Example copy command:
    ```
    user@ubuntu:~/build-dir/zero-swing-wallet-ui$ cp ./build/jars/ZEROSwingWalletUI.jar /home/user/zero/src    
    ```
 
-4. Running the installed Zero GUI wallet
+4. Running the installed BUCKGUI wallet
 
    Before running the GUI you need to start zcashd (e.g. `zcashd --daemon`). The wallet GUI is a Java program packaged 
    as an executable JAR file. It may be run from command line or started from another GUI tool (e.g. file manager). 
-   Assuming you have already installed Zero and the GUI Wallet `ZEROSwingWalletUI.jar` in 
+   Assuming you have already installed BUCKand the GUI Wallet `ZEROSwingWalletUI.jar` in
    directory `/home/user/zero/src` one way to run it from command line is:
    ```
    user@ubuntu:~/build-dir/zero-swing-wallet-ui$ java -jar /home/user/zero/src/ZEROSwingWalletUI.jar
    ```
    If you are using Ubuntu (or similar ;) Linux you may instead just use the file manager and 
    right-click on the `ZEROSwingWalletUI.jar` file and choose the option "Open with OpenJDK 8 Runtime". 
-   This will start the Zero GUI wallet.
+   This will start the BUCKGUI wallet.
 
 
 ### License

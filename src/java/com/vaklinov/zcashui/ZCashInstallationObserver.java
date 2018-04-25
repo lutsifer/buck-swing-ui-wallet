@@ -71,7 +71,7 @@ public class ZCashInstallationObserver
 		if (!dir.exists() || dir.isFile())
 		{
 			throw new InstallationDetectionException(
-				"The Zero installation directory " + installDir + " does not exist or is not " +
+				"The BUCKinstallation directory " + installDir + " does not exist or is not " +
 			    "a directory or is otherwise inaccessible to the wallet!");
 		}
 
@@ -84,14 +84,14 @@ public class ZCashInstallationObserver
 			zcashcli = OSUtil.findZCashCommand(OSUtil.getZCashCli());
 		}
 
-		System.out.println("Using Zero utilities: " +
+		System.out.println("Using BUCKutilities: " +
 		                   "zcashd: "    + ((zcashd != null) ? zcashd.getCanonicalPath() : "<MISSING>") + ", " +
 		                   "zcash-cli: " + ((zcashcli != null) ? zcashcli.getCanonicalPath() : "<MISSING>"));
 
 		if ((zcashd == null) || (zcashcli == null) || (!zcashd.exists()) || (!zcashcli.exists()))
 		{
 			throw new InstallationDetectionException(
-				"The Zero GUI Wallet installation directory " + installDir + " needs\nto contain " +
+				"The BUCKGUI Wallet installation directory " + installDir + " needs\nto contain " +
 				"the command line utilities zcashd and zcash-cli. At least one of them is missing! \n" +
 				"Please place files ZEROSwingWalletUI.jar, " + OSUtil.getZCashCli() + ", " + 
 				OSUtil.getZCashd() + " in the same directory.");
