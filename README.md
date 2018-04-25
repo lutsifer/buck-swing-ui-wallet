@@ -1,5 +1,5 @@
-#THIS WALLET IS MADE FOR OWN CONSUMPTION !!!
-#I CAN'T BE HELD RESPONSIBLE FOR ANY PROBLEMS WHILE USING IT
+# THIS WALLET IS MADE FOR OWN CONSUMPTION !!!
+# I CAN'T BE HELD RESPONSIBLE FOR ANY PROBLEMS WHILE USING IT
 
 ## Graphical user interface wrapper for the [ZERO](https://bitcointalk.org/index.php?topic=1796036.0) command line tools
 
