@@ -135,7 +135,7 @@ public class OSUtil
 	{
 		// TODO: this way of finding the dir is JAR name dependent - tricky, may not work
 		// if program is repackaged as different JAR!
-		final String JAR_NAME = "ZEROSwingWalletUI.jar";
+		final String JAR_NAME = "BUCKSwingWalletUI.jar";
 		String cp = System.getProperty("java.class.path");
 		if ((cp != null) && (cp.indexOf(File.pathSeparator) == -1) &&
 			(cp.endsWith(JAR_NAME)))
@@ -201,13 +201,13 @@ public class OSUtil
 	    
 	    if (os == OS_TYPE.MAC_OS)
 	    {
-	        dir = new File(userHome, "Library/Application Support/ZeroSwingWalletUI");
+	        dir = new File(userHome, "Library/Application Support/BUCKSwingWalletUI");
 	    } else if (os == OS_TYPE.WINDOWS)
 		{
-			dir = new File(System.getenv("LOCALAPPDATA") + "\\ZeroSwingWalletUI");
+			dir = new File(System.getenv("LOCALAPPDATA") + "\\BUCKSwingWalletUI");
 		} else
 	    {
-	        dir = new File(userHome.getCanonicalPath() + File.separator + ".ZeroSwingWalletUI");
+	        dir = new File(userHome.getCanonicalPath() + File.separator + ".BUCKSwingWalletUI");
 	    }
 	    
 		if (!dir.exists())

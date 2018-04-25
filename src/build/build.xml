@@ -27,7 +27,7 @@
  * THE SOFTWARE.                                    
  *
 -->
-<project name="ZEROSwingWalletUI" basedir="../.." default="buildit">
+<project name="BUCKSwingWalletUI" basedir="../.." default="buildit">
 	
     <property name="src.dir"     value="src"/>
     <property name="build.dir"   value="build"/>
